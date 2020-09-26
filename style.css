@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Kumbh Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: 5vh 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  background: rgb(195,228,228);
+  background: linear-gradient(0deg, rgba(195,228,228,1) 0%, rgba(255,255,255,1) 70%);
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  align-items: center;
+  max-width: 350px;
+  border: 2px solid #c3e4e4;
+  border-radius: 10px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+header {
+  font-size: 23px;
+  width: 100%;
+  padding: 20px;
+  line-height: 15vh;
+  text-align: center;
+  background-image: url('header.jpg');
+  border-bottom: 2px solid #c3e4e4;
+}
+
+main {
+  width: 90%;
+  flex-grow: 1;
+  margin: 25px 0;
+}
+
+.add {
+  padding: 10px 0;
+  margin-left: 2px;
+  width: 20%;
+  background-color: #35baf6;
+  border: 2px solid #35baf6;
+  border-radius: 5px;
+  color: white;
+}
+input {
+  width: 69%;
+  padding: 10px;
+}
+.alert {
+  background-color: #ee2400;
+  color: white;
+  width: 95%;
+  border-radius: 5px;
+  line-height: 32px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.done {
+  background-color: #64dd17;
+  color: white;
+  width: 95%;
+  border-radius: 5px;
+  line-height: 32px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  margin-top: 30px;
+}
+h3 {
+  padding-bottom: 20px;
+}
+.element {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+div > li {
+  flex-basis: 65%;
+  line-height: 30px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 0 8px;
+  margin: 5px 0; 
+}
+.remove {
+  flex-basis: 10%;
+  line-height: 25px;
+  background-color: #ee2400;
+  border: 2px solid #ee2400;
+  border-radius: 5px;
+  color: white;
+}
+.remove i {
+  transition: 0.1s;
+}
+.remove:hover i {
+transform: rotate(90deg);
+cursor: pointer;
+}
+.status {
+  flex-basis: 10%;
+  line-height: 25px;
+  background-color: #ccff90;
+  border: 2px solid #ccff90;
+  border-radius: 5px;
+  color: white;
+  transition: 0.1s;
+  
+}
+.status:hover {
+  border: 2px solid #64dd17;
+  background: #64dd17;
+  cursor: pointer;
+}
+.status-active {
+  border: 2px solid #64dd17;
+  background: #64dd17;
+}
+.fas {
+  font-size: 12px;
+  padding: 8px 11px;
+}
